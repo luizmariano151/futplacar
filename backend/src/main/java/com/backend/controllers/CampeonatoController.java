@@ -1,4 +1,4 @@
-package com.backend.futplacar.controllers;
+package com.backend.controllers;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.backend.futplacar.entities.Campeonato;
-import com.backend.futplacar.services.CampeonatoService;
+import com.backend.entities.Campeonato;
+import com.backend.services.CampeonatoService;
 
 @RestController
 @RequestMapping(value = "/campeonatos")

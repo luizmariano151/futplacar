@@ -1,10 +1,10 @@
-package com.backend.futplacar;
+package com.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FutplacarApplicationTests {
+class BackendApplicationTests {
 
 	@Test
 	void contextLoads() {

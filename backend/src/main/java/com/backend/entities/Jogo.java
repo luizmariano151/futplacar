@@ -1,4 +1,4 @@
-package com.backend.futplacar.entities;
+package com.backend.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.backend.futplacar.services;
+package com.backend.services;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,8 +9,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 import org.springframework.stereotype.Service;
 
-import com.backend.futplacar.entities.Campeonato;
-import com.backend.futplacar.entities.Jogo;
+import com.backend.entities.Campeonato;
+import com.backend.entities.Jogo;
 
 @Service
 public class CampeonatoService {

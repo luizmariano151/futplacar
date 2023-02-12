@@ -1,4 +1,4 @@
-package com.backend.futplacar.entities;
+package com.backend.entities;
 
 import java.util.List;
 

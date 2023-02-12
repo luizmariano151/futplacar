@@ -1,13 +1,13 @@
-package com.backend.futplacar;
+package com.backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FutplacarApplication {
+public class BackendApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FutplacarApplication.class, args);
+		SpringApplication.run(BackendApplication.class, args);
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.backend.futplacar.config;
+package com.backend.config;
 
 import java.util.Arrays;
 
