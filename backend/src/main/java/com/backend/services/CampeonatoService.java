@@ -15,13 +15,13 @@ import com.backend.entities.Jogo;
 @Service
 public class CampeonatoService {
 
-	public List<Campeonato> findTodayMatches(){
+	public List<Campeonato> findTodayMatches() throws Exception{
 		
 		List<Campeonato> campeonatos = null;
 		try {
 			campeonatos = extractChampionships();
 		} catch (IOException e) {
-			System.out.println("erro conexão");
+			throw new Exception("NÃO FOI POSSÍVEL BUSCAR OS JOGOS");
 		}
 		return campeonatos;
 		

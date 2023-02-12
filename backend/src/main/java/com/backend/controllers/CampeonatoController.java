@@ -20,8 +20,13 @@ public class CampeonatoController {
 	private CampeonatoService service;
 	
 	@GetMapping("/jogos-de-hoje")
-	public ResponseEntity<List<Campeonato>> findTodayMatches (){
-		List<Campeonato> campeonatos = service.findTodayMatches();
+	public ResponseEntity<?> findTodayMatches (){
+		List<Campeonato> campeonatos = null;
+		try {
+			campeonatos = service.findTodayMatches();
+		} catch (Exception e) {
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
+		}
 		return ResponseEntity.status(HttpStatus.OK).body(campeonatos);
 	}
 	
